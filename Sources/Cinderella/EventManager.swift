@@ -1,13 +1,6 @@
 import Foundation
 import AppKit
 
-protocol CinderellaEvent {
-    var id: String { get }
-    var name: String { get }
-    var baseIntensity: Int { get }
-    func apply(intensity: Int)
-}
-
 final class EventManager {
     static let shared = EventManager()
     private init() {
@@ -23,11 +16,9 @@ final class EventManager {
     }
 
     @objc private func onNewEvent(_ n: Notification) {
-        // add events in sequence: first hide windows, then fullscreen, then others
         let elapsed = n.object as? Int ?? 0
         DispatchQueue.main.async {
             if elapsed == 0 { return }
-            // choose an event based on elapsed or randomness
             if elapsed % 60 == 0 {
                 self.activate(event: FullscreenWarning())
             } else {
@@ -38,7 +29,6 @@ final class EventManager {
 
     func activate(event: CinderellaEvent) {
         activeEvents.append(event)
-        // apply immediately with current intensity
         event.apply(intensity: EventScheduler.shared.intensity)
     }
 
