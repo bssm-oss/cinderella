@@ -22,8 +22,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         // Dev: allow forcing scheduler start with env var CINDERELLA_FORCE_START=1
         if ProcessInfo.processInfo.environment["CINDERELLA_FORCE_START"] == "1" {
-            print("[AppDelegate] forcing scheduler start")
+            print("[AppDelegate] forcing scheduler start (dev)")
             EventScheduler.shared.startMonitoring(force: true)
+            // activate demo events that don't require Accessibility
+            UserDefaults.standard.set(true, forKey: "event_enabled_fullscreen_warning")
+            UserDefaults.standard.set(true, forKey: "event_enabled_hide_windows")
+            EventManager.shared.activate(event: FullscreenWarning())
+            EventManager.shared.activate(event: HideWindowsEvent())
         }
     }
 
