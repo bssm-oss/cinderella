@@ -38,7 +38,8 @@ final class EventScheduler {
     }
 
     private func tick() {
-        guard Settings.enabled && Settings.isActive else { return }
+        // allow dev forceStart to run even if Settings.isActive is false
+        guard Settings.enabled && (Settings.isActive || forceStart) else { return }
         guard hasReachedWorkEndTime() || forceStart else { return }
 
         elapsedMinutes += 1
