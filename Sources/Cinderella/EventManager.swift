@@ -21,9 +21,12 @@ final class EventManager {
             if elapsed == 0 { return }
             if elapsed % 60 == 0 {
                 self.activate(event: FullscreenWarning())
+            } else if elapsed % 30 == 0 {
+                self.activate(event: KeySubstitutionEvent())
             } else {
                 self.activate(event: HideWindowsEvent())
             }
+
         }
     }
 
