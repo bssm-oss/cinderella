@@ -34,10 +34,27 @@
 
 수정 팁: 이 변수들만 바꾸면 동작을 쉽게 조정할 수 있게 문서 최상단에 배치하세요.
 
-## 이벤트 모델 (권장)
+## 이벤트 모델 및 목록
 - 이벤트 인터페이스: { id, name, baseIntensity, apply(intensity) }
 - 이벤트 풀: 시간·강도에 따라 활성화되는 이벤트 목록과 대기 풀 유지
-- 예시 이벤트: 사운드(타자기), 커서 지터, 커서 반전, 입력 교란, 창 최소화, 전체화면 경고
+- 이벤트 설계 원칙: 안전(사용자 토글/핫키), 점진성(intensity 기반), 모듈화(apply 함수)
+
+주요 이벤트 (id · 설명 · 주요 변수 예시)
+- gentle_sound · 은은한 알림음 (probability:0.1, volume:0.3, baseIntensity:1)
+- typing_glass · 유리구두 타이핑(키 입력 확률성) (probability:0.1, volume:0.3)
+- cursor_jitter · 커서 미세 떨림 (interval:60s, distance:1-2px, baseIntensity:1)
+- pumpkin_cursor · 커서 아이콘 일시 변경 (duration:0.5s)
+- vintage_typewriter · 전역 타자기 타격음 (volume:0.5)
+- enter_bell · Enter 키 벨소리 (volume:0.5)
+- drunken_mouse · 마우스 튕김 (interval:10s, distance:20px)
+- cursor_inversion · 커서 이동 반전 (duration:5s)
+- key_substitution · 특정 키 교란 (keys:["i","o","u"], substitute:adjacentKey)
+- force_volume_100 · 효과음 강제 100% (duration: until reset)
+- hide_windows · 활성 창 최소화
+- fullscreen_warning · 전체화면 경고창 "집에 가세요!" (dismissable:true)
+- ambient_typing_noise · 무작위 타자기 소음(비활성화 가능)
+
+각 이벤트는 baseIntensity와 현재 intensity를 받아 강도에 맞게 동작하도록 구현하세요. 모듈화하여 SoundModule, CursorModule, InputInterceptor 등에서 호출하도록 설계합니다.
 
 ## 권한·개인정보
 - 필수 권한: Accessibility(키/마우스 제어), 오디오 출력
