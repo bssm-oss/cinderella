@@ -1,6 +1,6 @@
 import Cocoa
 
-// StatusBarController: creates NSStatusItem and popover with controls
-final class StatusBarController {
-    // TODO: implement UI wiring (time label, start/stop buttons)
+// StatusBarView: placeholder view helper to avoid duplicate StatusBarController symbol
+final class StatusBarView {
+    // TODO: provide view utilities for the popover
 }
