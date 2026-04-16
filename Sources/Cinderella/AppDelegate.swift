@@ -126,8 +126,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         case "hide_windows": return HideWindowsEvent()
         case "fullscreen_warning": return FullscreenWarning()
         case "key_substitution": return KeySubstitutionEvent()
-        case "cursor_jitter": return CursorJitterEvent()
-        case "cursor_inversion": return CursorInversionEvent()
         default: return nil
         }
     }
