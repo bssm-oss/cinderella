@@ -65,4 +65,10 @@ final class FullscreenWarning: CinderellaEvent {
         window?.orderOut(nil)
         window = nil
     }
+
+    func deactivate() {
+        DispatchQueue.main.async { [weak self] in
+            self?.dismiss()
+        }
+    }
 }

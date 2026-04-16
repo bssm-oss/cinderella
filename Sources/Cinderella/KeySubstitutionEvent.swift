@@ -17,4 +17,9 @@ final class KeySubstitutionEvent: CinderellaEvent {
         let dur = min(60, 5 + intensity * 5) // seconds
         InputInterceptor.shared.enableSubstitution(map: baseMap, duration: TimeInterval(dur))
     }
+
+    func deactivate() {
+        InputInterceptor.shared.stopIntercepting()
+        print("[KeySubstitutionEvent] deactivated")
+    }
 }

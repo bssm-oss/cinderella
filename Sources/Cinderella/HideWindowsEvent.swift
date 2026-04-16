@@ -20,4 +20,9 @@ final class HideWindowsEvent: CinderellaEvent {
         // Also optionally play a short sound
         SoundModule.shared.play(id: "hide_windows", volume: 0.5)
     }
+
+    func deactivate() {
+        // No reliable way to unhide all previous apps; leave as no-op to avoid surprising behavior
+        print("[HideWindowsEvent] deactivate (no-op)")
+    }
 }

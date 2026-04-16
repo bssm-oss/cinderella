@@ -43,11 +43,15 @@ final class EventManager {
 
     func deactivate(eventId: String) {
         print("[EventManager] deactivate \(eventId)")
+        for e in activeEvents where e.id == eventId {
+            e.deactivate()
+        }
         activeEvents.removeAll { $0.id == eventId }
     }
 
     func deactivateAll() {
         print("[EventManager] deactivateAll")
+        for e in activeEvents { e.deactivate() }
         activeEvents.removeAll()
     }
 

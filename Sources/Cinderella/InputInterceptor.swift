@@ -39,6 +39,12 @@ final class InputInterceptor {
         substitutionMap = [:]
     }
 
+    func disableSubstitution() {
+        substitutionEnabled = false
+        substitutionMap = [:]
+        print("[InputInterceptor] substitution disabled (manual)")
+    }
+
     static func handleEvent(proxy: CGEventTapProxy?, type: CGEventType, event: CGEvent) -> Unmanaged<CGEvent>? {
         guard type == .keyDown else { return Unmanaged.passRetained(event) }
         let inst = InputInterceptor.shared

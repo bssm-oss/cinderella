@@ -1,0 +1,494 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Cinderella-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/sources",
+      "importPath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AccessibilityHelper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/CursorModule.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventScheduler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Events.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/FullscreenWarning.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/HideWindowsEvent.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/InputInterceptor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/KeySubstitutionEvent.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/PanicHotkey.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Settings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/SoundModule.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/StatusBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Cinderella",
+      "moduleOutputPath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Modules/Cinderella.swiftmodule",
+      "objects" : [
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule.swift.o",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Cinderella_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Modules/Cinderella.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AccessibilityHelper.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AppDelegate.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/CursorModule.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventManager.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventScheduler.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Events.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/FullscreenWarning.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/HideWindowsEvent.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/InputInterceptor.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/KeySubstitutionEvent.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/PanicHotkey.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Settings.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/SoundModule.swift",
+        "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/StatusBarController.swift"
+      ],
+      "tempsPath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Cinderella" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Cinderella",
+      "-c",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AccessibilityHelper.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AppDelegate.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/CursorModule.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventManager.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventScheduler.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Events.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/FullscreenWarning.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/HideWindowsEvent.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/InputInterceptor.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/KeySubstitutionEvent.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/PanicHotkey.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Settings.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/SoundModule.swift",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/StatusBarController.swift",
+      "-I",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Cinderella_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Cinderella" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella-entitlement.plist"
+    },
+    "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AccessibilityHelper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/CursorModule.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventScheduler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Events.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/FullscreenWarning.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/HideWindowsEvent.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/InputInterceptor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/KeySubstitutionEvent.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/PanicHotkey.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Settings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/SoundModule.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/StatusBarController.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/sources"
+    },
+    "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.product/Objects.LinkFileList"
+    },
+    "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

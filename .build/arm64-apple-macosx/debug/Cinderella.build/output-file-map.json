@@ -1,0 +1,103 @@
+{
+  "": {
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/primary.swiftdeps"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AccessibilityHelper.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AccessibilityHelper.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/AppDelegate.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/AppDelegate.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/CursorModule.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/CursorModule.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventManager.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventManager.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/EventScheduler.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/EventScheduler.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Events.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Events.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/FullscreenWarning.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/FullscreenWarning.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/HideWindowsEvent.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/HideWindowsEvent.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/InputInterceptor.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/InputInterceptor.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/KeySubstitutionEvent.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/KeySubstitutionEvent.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/PanicHotkey.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/PanicHotkey.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/Settings.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/Settings.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/SoundModule.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/SoundModule.dia"
+  },
+  "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/Sources/Cinderella/StatusBarController.swift": {
+    "dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController.d",
+    "object": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController.swift.o",
+    "swiftmodule": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController~partial.swiftmodule",
+    "swift-dependencies": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController.swiftdeps",
+    "diagnostics": "/Users/gimhyeon-u/Desktop/khwoo1219/01_develop/02_notthatimportant/bssm-oss/cinderella/.build/arm64-apple-macosx/debug/Cinderella.build/StatusBarController.dia"
+  }
+}
