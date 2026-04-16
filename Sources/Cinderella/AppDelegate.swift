@@ -41,7 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Events submenu
         let eventsItem = NSMenuItem(title: "Events", action: nil, keyEquivalent: "")
         let eventsSubmenu = NSMenu(title: "Events")
-        let eventIds = ["hide_windows","fullscreen_warning","key_substitution","cursor_jitter","cursor_inversion"]
+        let eventIds = ["hide_windows","fullscreen_warning","key_substitution"]
         for id in eventIds {
             let title = id.replacingOccurrences(of: "_", with: " ")
             let item = NSMenuItem(title: title, action: #selector(toggleEvent(_:)), keyEquivalent: "")
@@ -68,7 +68,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func restoreEnabledEvents() {
-        let eventIds = ["hide_windows","fullscreen_warning","key_substitution","cursor_jitter","cursor_inversion"]
+        let eventIds = ["hide_windows","fullscreen_warning","key_substitution"]
         for id in eventIds where UserDefaults.standard.bool(forKey: "event_enabled_\(id)") {
             if let ev = makeEvent(id: id) { EventManager.shared.activate(event: ev) }
         }
@@ -81,12 +81,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func onStart() {
         UserDefaults.standard.set(true, forKey: kIsActiveKey)
-        EventScheduler.shared.start()
+        EventScheduler.shared.startMonitoring()
     }
 
     @objc func onStop() {
         UserDefaults.standard.set(false, forKey: kIsActiveKey)
-        EventScheduler.shared.stop()
+        EventScheduler.shared.stopMonitoring()
     }
 
     @objc func onQuit() {
