@@ -61,6 +61,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(eventsItem)
 
         menu.addItem(.separator())
+        let prefsItem = NSMenuItem(title: "Preferences...", action: #selector(showPreferences), keyEquivalent: ",")
+        prefsItem.target = self
+        menu.addItem(prefsItem)
+
+        let quitSep = NSMenuItem.separator()
+        menu.addItem(quitSep)
+
         let quitItem = NSMenuItem(title: "Quit", action: #selector(onQuit), keyEquivalent: "q")
         quitItem.target = self
         menu.addItem(quitItem)
@@ -128,5 +135,69 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         case "key_substitution": return KeySubstitutionEvent()
         default: return nil
         }
+    }
+
+    @objc func showPreferences() {
+        let w = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 360, height: 220), styleMask: [.titled, .closable], backing: .buffered, defer: false)
+        w.title = "Cinderella Preferences"
+
+        let content = NSView(frame: NSRect(x: 0, y: 0, width: 360, height: 220))
+
+        let label = NSTextField(labelWithString: "Work end time (HH:mm):")
+        label.frame = NSRect(x: 16, y: 170, width: 200, height: 20)
+        content.addSubview(label)
+
+        let tf = NSTextField(string: UserDefaults.standard.string(forKey: kWorkEndTimeKey) ?? "18:00")
+        tf.frame = NSRect(x: 16, y: 140, width: 120, height: 24)
+        tf.identifier = NSUserInterfaceItemIdentifier("pref_work_end")
+        content.addSubview(tf)
+
+        // event checkboxes
+        let eventIds = ["hide_windows","fullscreen_warning","key_substitution"]
+        var y = 100
+        for id in eventIds {
+            let title = id.replacingOccurrences(of: "_", with: " ")
+            let cb = NSButton(checkboxWithTitle: title, target: self, action: #selector(prefCheckboxToggled(_:)))
+            cb.frame = NSRect(x: 16, y: y, width: 300, height: 20)
+            cb.state = UserDefaults.standard.bool(forKey: "event_enabled_\(id)") ? .on : .off
+            cb.identifier = NSUserInterfaceItemIdentifier(id)
+            content.addSubview(cb)
+            y -= 28
+        }
+
+        let saveBtn = NSButton(title: "Save", target: self, action: #selector(prefSaveAndClose(_:)))
+        saveBtn.frame = NSRect(x: 200, y: 12, width: 70, height: 30)
+        content.addSubview(saveBtn)
+
+        let closeBtn = NSButton(title: "Close", target: self, action: #selector(prefClose(_:)))
+        closeBtn.frame = NSRect(x: 280, y: 12, width: 70, height: 30)
+        content.addSubview(closeBtn)
+
+        w.contentView = content
+        w.center()
+        w.makeKeyAndOrderFront(nil)
+    }
+
+    @objc func prefCheckboxToggled(_ sender: NSButton) {
+        guard let id = sender.identifier?.rawValue else { return }
+        let enabled = sender.state == .on
+        UserDefaults.standard.set(enabled, forKey: "event_enabled_\(id)")
+        if enabled {
+            if let ev = makeEvent(id: id) { EventManager.shared.activate(event: ev) }
+        } else {
+            EventManager.shared.deactivate(eventId: id)
+        }
+    }
+
+    @objc func prefSaveAndClose(_ sender: NSButton) {
+        guard let window = sender.window, let tf = window.contentView?.subviews.first(where: { $0.identifier?.rawValue == "pref_work_end" }) as? NSTextField else { return }
+        let s = tf.stringValue.trimmingCharacters(in: .whitespacesAndNewlines)
+        UserDefaults.standard.set(s, forKey: kWorkEndTimeKey)
+        updateStatusTitle()
+        window.close()
+    }
+
+    @objc func prefClose(_ sender: NSButton) {
+        sender.window?.close()
     }
 }
