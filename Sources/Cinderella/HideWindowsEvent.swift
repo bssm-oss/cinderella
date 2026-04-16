@@ -18,6 +18,6 @@ final class HideWindowsEvent: CinderellaEvent {
             }
         }
         // Also optionally play a short sound
-        SoundModule.shared.play("hide_windows", volume: 0.5)
+        SoundModule.shared.play(id: "hide_windows", volume: 0.5)
     }
 }

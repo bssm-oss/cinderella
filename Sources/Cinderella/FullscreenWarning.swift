@@ -58,7 +58,7 @@ final class FullscreenWarning: CinderellaEvent {
         }
 
         // play a warning sound
-        SoundModule.shared.play("warning", volume: 0.8)
+        SoundModule.shared.play(id: "warning", volume: 0.8)
     }
 
     @objc private func dismiss() {
