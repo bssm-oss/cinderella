@@ -29,6 +29,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             UserDefaults.standard.set(true, forKey: "event_enabled_hide_windows")
             EventManager.shared.activate(event: FullscreenWarning())
             EventManager.shared.activate(event: HideWindowsEvent())
+
+            // write an explicit marker to the logfile so users can see activity without Accessibility
+            let logPath = "/tmp/cinderella.log"
+            let marker = "DEMO_STARTED: \(Date())\n"
+            if let data = marker.data(using: .utf8) {
+                if FileManager.default.fileExists(atPath: logPath) {
+                    if let fh = FileHandle(forWritingAtPath: logPath) {
+                        fh.seekToEndOfFile()
+                        fh.write(data)
+                        try? fh.close()
+                    }
+                } else {
+                    FileManager.default.createFile(atPath: logPath, contents: data, attributes: [FileAttributeKey.posixPermissions: 0o644])
+                }
+            }
+
+            // show a quick user-visible alert and beep so the tester notices the app started
+            DispatchQueue.main.async {
+                NSSound.beep()
+                let alert = NSAlert()
+                alert.messageText = "Cinderella (demo) started"
+                alert.informativeText = "Demo events activated: FullscreenWarning, HideWindows. Close this alert to continue."
+                alert.runModal()
+            }
         }
     }
 
