@@ -17,9 +17,12 @@ final class EventScheduler {
         intensity = 1
         forceStart = force
 
+        print("[EventScheduler] startMonitoring force=\(forceStart)")
+
         timer = DispatchSource.makeTimerSource(queue: queue)
         let fast = ProcessInfo.processInfo.environment["CINDERELLA_FAST_TICK"] == "1"
         let interval = fast ? 1 : 60
+        print("[EventScheduler] scheduling tick interval=\(interval)s")
         timer?.schedule(deadline: .now(), repeating: .seconds(interval))
         timer?.setEventHandler { [weak self] in
             self?.tick()
@@ -43,6 +46,7 @@ final class EventScheduler {
         guard hasReachedWorkEndTime() || forceStart else { return }
 
         elapsedMinutes += 1
+        print("[EventScheduler] tick -> elapsed=\(elapsedMinutes) intensity=\(intensity)")
 
         let tickMin = max(1, Settings.intensityTickMin)
         let step = max(1, Settings.eventIntensityStep)
