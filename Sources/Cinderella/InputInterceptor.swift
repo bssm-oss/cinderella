@@ -45,12 +45,12 @@ final class InputInterceptor {
         if !inst.substitutionEnabled { return Unmanaged.passRetained(event) }
 
         // extract typed unicode string
-        var length: Int32 = 0
+        var length: Int = 0
         let maxLen = 4
         var buffer = [UniChar](repeating: 0, count: maxLen)
-        event.keyboardGetUnicodeString(maxStringLength: Int32(maxLen), actualStringLength: &length, unicodeString: &buffer)
+        event.keyboardGetUnicodeString(maxStringLength: maxLen, actualStringLength: &length, unicodeString: &buffer)
         if length <= 0 { return Unmanaged.passRetained(event) }
-        let s = String(utf16CodeUnits: buffer, count: Int(length))
+        let s = String(utf16CodeUnits: buffer, count: length)
         guard let ch = s.first?.lowercased().first else { return Unmanaged.passRetained(event) }
 
         if let subs = inst.substitutionMap[ch], !subs.isEmpty {
@@ -61,8 +61,10 @@ final class InputInterceptor {
                 // copy flags
                 new.flags = event.flags
                 // set unicode string
-                var uni = [UniChar](substitute.utf16)
-                new.keyboardSetUnicodeString(integerValues: uni)
+                var uni = Array(substitute.utf16)
+                uni.withUnsafeBufferPointer { buf in
+                    new.keyboardSetUnicodeString(stringLength: buf.count, unicodeString: buf.baseAddress)
+                }
                 new.post(tap: .cghidEventTap)
             }
             // swallow original
@@ -81,8 +83,6 @@ final class InputInterceptor {
             self.substitutionEnabled = false
             self.substitutionMap = [:]
             print("[InputInterceptor] substitution disabled after duration")
-            // optionally stop intercepting if no longer needed
-            // self.stopIntercepting()
         }
         print("[InputInterceptor] substitution enabled for \(duration)s")
     }
