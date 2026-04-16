@@ -52,6 +52,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 alert.messageText = "Cinderella (demo) started"
                 alert.informativeText = "Demo events activated: FullscreenWarning, HideWindows. Close this alert to continue."
                 alert.runModal()
+
+                // show stronger fullscreen overlay demo (repeated) so it's visible without Accessibility
+                self.showStrongDemoOverlay(repeatCount: 2, interval: 3)
             }
         }
     }
@@ -235,5 +238,48 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func prefClose(_ sender: NSButton) {
         sender.window?.close()
+    }
+
+    // Strong visual demo overlay used in dev mode (no Accessibility required)
+    func showStrongDemoOverlay(repeatCount: Int = 1, interval: TimeInterval = 2) {
+        DispatchQueue.main.async {
+            guard let screenFrame = NSScreen.main?.frame else { return }
+            let w = NSWindow(contentRect: screenFrame, styleMask: .borderless, backing: .buffered, defer: false)
+            w.level = .screenSaver
+            w.isOpaque = false
+            w.backgroundColor = NSColor(calibratedWhite: 0, alpha: 0.85)
+            w.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary]
+
+            let tv = NSTextField(labelWithString: "집에 가세요!")
+            tv.font = NSFont.systemFont(ofSize: 120, weight: .bold)
+            tv.textColor = .white
+            tv.alignment = .center
+            tv.translatesAutoresizingMaskIntoConstraints = false
+
+            let content = NSView(frame: screenFrame)
+            content.addSubview(tv)
+            w.contentView = content
+
+            NSLayoutConstraint.activate([
+                tv.centerXAnchor.constraint(equalTo: content.centerXAnchor),
+                tv.centerYAnchor.constraint(equalTo: content.centerYAnchor)
+            ])
+
+            w.makeKeyAndOrderFront(nil)
+
+            // show overlay for a short time and optionally repeat
+            var remaining = repeatCount
+            let timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { t in
+                remaining -= 1
+                if remaining <= 0 {
+                    w.orderOut(nil)
+                    t.invalidate()
+                } else {
+                    // briefly flash by bringing to front again
+                    w.orderFrontRegardless()
+                }
+            }
+            RunLoop.main.add(timer, forMode: .common)
+        }
     }
 }
