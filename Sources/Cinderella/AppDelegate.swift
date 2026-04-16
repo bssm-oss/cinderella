@@ -17,6 +17,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         setupStatusBar()
 
+        // Ensure app activation policy so status bar item appears when run from terminal
+        DispatchQueue.main.async {
+            NSApp.setActivationPolicy(.accessory)
+            NSApp.activate(ignoringOtherApps: true)
+            self.updateStatusTitle()
+        }
+
         // Restore enabled events
         restoreEnabledEvents()
 
