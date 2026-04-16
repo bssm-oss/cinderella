@@ -18,7 +18,9 @@ final class EventScheduler {
         forceStart = force
 
         timer = DispatchSource.makeTimerSource(queue: queue)
-        timer?.schedule(deadline: .now(), repeating: .seconds(60))
+        let fast = ProcessInfo.processInfo.environment["CINDERELLA_FAST_TICK"] == "1"
+        let interval = fast ? 1 : 60
+        timer?.schedule(deadline: .now(), repeating: .seconds(interval))
         timer?.setEventHandler { [weak self] in
             self?.tick()
         }
