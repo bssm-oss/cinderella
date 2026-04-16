@@ -8,6 +8,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        print("[AppDelegate] didFinishLaunching, env: \(ProcessInfo.processInfo.environment)")
         // Initialize modules and register hotkey
         _ = SoundModule.shared
         _ = CursorModule.shared
@@ -21,6 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         // Dev: allow forcing scheduler start with env var CINDERELLA_FORCE_START=1
         if ProcessInfo.processInfo.environment["CINDERELLA_FORCE_START"] == "1" {
+            print("[AppDelegate] forcing scheduler start")
             EventScheduler.shared.startMonitoring(force: true)
         }
     }
