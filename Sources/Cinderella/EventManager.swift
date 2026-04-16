@@ -35,6 +35,14 @@ final class EventManager {
         event.apply(intensity: EventScheduler.shared.intensity)
     }
 
+    func deactivate(eventId: String) {
+        activeEvents.removeAll { $0.id == eventId }
+    }
+
+    func deactivateAll() {
+        activeEvents.removeAll()
+    }
+
     func clearEvents() {
         activeEvents.removeAll()
     }
