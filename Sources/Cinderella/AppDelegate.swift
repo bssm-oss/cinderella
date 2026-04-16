@@ -18,6 +18,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         // Restore enabled events
         restoreEnabledEvents()
+
+        // Dev: allow forcing scheduler start with env var CINDERELLA_FORCE_START=1
+        if ProcessInfo.processInfo.environment["CINDERELLA_FORCE_START"] == "1" {
+            EventScheduler.shared.startMonitoring(force: true)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
