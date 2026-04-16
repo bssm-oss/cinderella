@@ -1,10 +1,11 @@
 import Foundation
 import AVFoundation
+import AppKit
 
 final class SoundModule {
     static let shared = SoundModule()
     private init() {
-        do { try AVAudioSession.sharedInstance().setCategory(.playback) } catch {}
+        // AVAudioSession is unavailable on macOS; AVAudioPlayer works without it.
         NotificationCenter.default.addObserver(self, selector: #selector(handleIntensity(_:)), name: .SchedulerDidUpdateIntensity, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleNewEvent(_:)), name: .SchedulerDidAddNewEvent, object: nil)
     }
