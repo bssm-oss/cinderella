@@ -1,92 +1,92 @@
 # Cinderella
 
-퇴근 시간이 지나도 일을 계속할 때, 상태바에서 단계적으로 개입해 귀가를 유도하는 macOS 메뉴바 앱입니다.
+[한국어 문서 보기 (README.ko.md)](./README.ko.md)
 
-## 주요 기능
-- 메뉴바에서 `Start (출근)` / `Stop (퇴근)` 제어
-- 퇴근 시간(`HH:mm`) 기반 동작 시작
-- 퇴근시간 이후 상태 문구/색상 표시
-- 이벤트 토글
+Cinderella is a macOS menu bar app that gradually nudges you to go home when you keep working past your configured end-of-work time.
+
+## Features
+- Menu bar controls: `Start` / `Stop`
+- Starts behavior based on configured work-end time (`HH:mm`)
+- Status text/color update after work-end time
+- Event toggles:
   - `hide_windows`
   - `fullscreen_warning`
   - `key_substitution`
   - `cursor_jitter`
-- 긴급 정지 핫키: `Cmd + Opt + Ctrl + Shift + Esc`
+- Emergency stop hotkey: `Cmd + Opt + Ctrl + Shift + Esc`
 
-## 요구사항
+## Requirements
 - macOS 12+
 - Xcode Command Line Tools (`swift`, `hdiutil`)
 
-## 빠른 시작 (개발 실행)
+## Quick Start (Dev)
 ```bash
 swift build
 open .build/debug/Cinderella
 ```
 
-## 앱 번들 빌드 (.app)
+## Build .app Bundle
 ```bash
 ./scripts/make_app.sh
 ```
 
-생성물:
+Output:
 - `dist/Cinderella.app`
 
-## DMG 빌드 (다운로드/배포용)
+## Build DMG (for Distribution)
 ```bash
 ./scripts/make_dmg.sh
 ```
 
-생성물:
+Output:
 - `dist/Cinderella.dmg`
 
-배포 시에는 `dist/Cinderella.dmg` 파일만 공유하면 됩니다.
+## End-user Installation
+1. Open `Cinderella.dmg`
+2. Drag `Cinderella.app` to `Applications`
+3. Launch `/Applications/Cinderella.app`
 
-## 설치 방법 (최종 사용자)
-1. `Cinderella.dmg` 열기
-2. `Cinderella.app`을 `Applications`로 드래그
-3. `/Applications/Cinderella.app` 실행
+## Required Permissions (macOS)
+Go to `System Settings` -> `Privacy & Security`
 
-## 필수 권한 설정 (한글 macOS 기준)
-`시스템 설정` → `개인정보 보호 및 보안`
+1. `Accessibility`
+- Add `Cinderella` and enable it
 
-1. `손쉬운 사용`
-- `Cinderella` 추가 후 켜기
+2. `Input Monitoring`
+- Add `Cinderella` and enable it
 
-2. `입력 모니터링`
-- `Cinderella` 추가 후 켜기
+After changing permissions, fully quit and relaunch the app.
 
-권한 변경 후 앱을 완전히 종료하고 다시 실행하세요.
-
-## 기본 사용법
-1. 메뉴바에서 Cinderella 클릭
-2. `Preferences...`에서 설정
+## Basic Usage
+1. Click Cinderella in the menu bar
+2. Open `Preferences...`
    - `Work end time (HH:mm)`
    - `After work-end message`
-3. `Start (출근)` 클릭
-4. 필요 시 `Events`에서 이벤트 on/off
-5. 중단은 `Stop (퇴근)` 또는 긴급 핫키
+3. Click `Start`
+4. Toggle events from `Events` menu as needed
+5. Stop with `Stop` or the emergency hotkey
 
-## 상태바 문구 규칙
-- 비근무중: `퇴근 HH:mm`
-- 근무중 + 퇴근시간 이전: `퇴근 HH:mm (근무중)`
-- 근무중 + 퇴근시간 이후: `퇴근 HH:mm (<설정 문구>)` + 빨간색
+## Status Text Rules
+- Not working: `퇴근 HH:mm`
+- Working + before work-end: `퇴근 HH:mm (근무중)`
+- Working + after work-end: `퇴근 HH:mm (<configured message>)` in red
 
-## 문제 해결
-### 메뉴바 아이콘/문구가 안 보일 때
-- 메뉴바 자동 숨김을 끄고 다시 확인
-- 메뉴바 아이콘이 많은 경우 여유 공간 확보
-- 앱 재실행
+## Troubleshooting
+### Menu bar text/icon not visible
+- Disable auto-hide for menu bar
+- Free menu bar space (too many icons can truncate items)
+- Relaunch the app
 
-### 권한을 줬는데 동작이 안 될 때
-- 권한 토글 off/on 후 앱 재실행
-- 필요 시 Gatekeeper 우회 안내 확인:
+### App still not working after granting permissions
+- Toggle permissions off/on, then relaunch
+- Gatekeeper guide:
   - `docs/GATEKEEPER.md`
   - `scripts/approve_instructions.sh`
 
-### 스크립트
-- 앱 번들 생성: `scripts/make_app.sh`
-- DMG 생성: `scripts/make_dmg.sh`
-- 권한 안내: `scripts/check_permissions.sh`
+## Scripts
+- Build app bundle: `scripts/make_app.sh`
+- Build DMG: `scripts/make_dmg.sh`
+- Permission helper: `scripts/check_permissions.sh`
 
-## 주의
-이 프로젝트는 데모/학습 목적입니다. 실제 배포/운영 전에는 사용자 동의, 보안, 법적 검토를 진행하세요.
+## Notice
+This project is intended for demo/learning purposes. Review user consent, security, and legal requirements before production distribution.
