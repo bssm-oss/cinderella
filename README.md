@@ -1,6 +1,6 @@
 # Cinderella
 
-## Install (for users)
+## Install
 1. Go to the Releases page:
    - https://github.com/bssm-oss/cinderella/releases
 2. Download `Cinderella.dmg`.
