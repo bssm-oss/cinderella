@@ -1,6 +1,6 @@
 # Cinderella
 
-## 설치 방법 (사용자용)
+## 설치 방법
 1. 릴리즈 페이지로 이동:
    - https://github.com/bssm-oss/cinderella/releases
 2. `Cinderella.dmg` 다운로드
