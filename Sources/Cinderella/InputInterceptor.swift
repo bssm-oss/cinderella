@@ -67,7 +67,7 @@ final class InputInterceptor {
                 // copy flags
                 new.flags = event.flags
                 // set unicode string
-                var uni = Array(substitute.utf16)
+                let uni = Array(substitute.utf16)
                 uni.withUnsafeBufferPointer { buf in
                     new.keyboardSetUnicodeString(stringLength: buf.count, unicodeString: buf.baseAddress)
                 }
