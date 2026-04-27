@@ -11,7 +11,12 @@ let package = Package(
         .executableTarget(
             name: "Cinderella",
             path: "Sources/Cinderella",
-            resources: []
+            resources: [.process("Resources")]
+        ),
+        .testTarget(
+            name: "CinderellaTests",
+            dependencies: ["Cinderella"],
+            path: "Tests"
         )
     ]
 )
