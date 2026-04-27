@@ -284,46 +284,34 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         }
 
         let window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 360, height: 280),
+            contentRect: NSRect(x: 0, y: 0, width: 360, height: 220),
             styleMask: [.titled, .closable],
             backing: .buffered,
             defer: false
         )
         window.title = "Cinderella Preferences"
 
-        let content = NSView(frame: NSRect(x: 0, y: 0, width: 360, height: 280))
+        let content = NSView(frame: NSRect(x: 0, y: 0, width: 360, height: 220))
 
         let label = NSTextField(labelWithString: "Work end time (HH:mm):")
-        label.frame = NSRect(x: 16, y: 230, width: 200, height: 20)
+        label.frame = NSRect(x: 16, y: 170, width: 200, height: 20)
         content.addSubview(label)
 
         let timeField = NSTextField(string: UserDefaults.standard.string(forKey: kWorkEndTimeKey) ?? "18:00")
-        timeField.frame = NSRect(x: 16, y: 202, width: 120, height: 24)
+        timeField.frame = NSRect(x: 16, y: 142, width: 120, height: 24)
         timeField.identifier = NSUserInterfaceItemIdentifier("pref_work_end")
         content.addSubview(timeField)
         prefWorkEndField = timeField
 
         let messageLabel = NSTextField(labelWithString: "After work-end message:")
-        messageLabel.frame = NSRect(x: 16, y: 166, width: 240, height: 20)
+        messageLabel.frame = NSRect(x: 16, y: 106, width: 240, height: 20)
         content.addSubview(messageLabel)
 
         let messageField = NSTextField(string: UserDefaults.standard.string(forKey: kOverdueMessageKey) ?? kDefaultOverdueMessage)
-        messageField.frame = NSRect(x: 16, y: 138, width: 328, height: 24)
+        messageField.frame = NSRect(x: 16, y: 78, width: 328, height: 24)
         messageField.identifier = NSUserInterfaceItemIdentifier("pref_overdue_message")
         content.addSubview(messageField)
         prefOverdueMessageField = messageField
-
-        let eventIds = ["hide_windows", "fullscreen_warning", "key_substitution", "cursor_jitter"]
-        var y = 96
-        for id in eventIds {
-            let title = id.replacingOccurrences(of: "_", with: " ")
-            let checkbox = NSButton(checkboxWithTitle: title, target: self, action: #selector(prefCheckboxToggled(_:)))
-            checkbox.frame = NSRect(x: 16, y: y, width: 300, height: 20)
-            checkbox.state = UserDefaults.standard.bool(forKey: "event_enabled_\(id)") ? .on : .off
-            checkbox.identifier = NSUserInterfaceItemIdentifier(id)
-            content.addSubview(checkbox)
-            y -= 28
-        }
 
         let saveButton = NSButton(title: "Save", target: self, action: #selector(prefSaveAndClose(_:)))
         saveButton.frame = NSRect(x: 200, y: 12, width: 70, height: 30)
@@ -341,20 +329,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         NSApp.activate(ignoringOtherApps: true)
         window.makeKeyAndOrderFront(nil)
         window.orderFrontRegardless()
-    }
-
-    @objc func prefCheckboxToggled(_ sender: NSButton) {
-        guard let id = sender.identifier?.rawValue else { return }
-        let enabled = sender.state == .on
-        UserDefaults.standard.set(enabled, forKey: "event_enabled_\(id)")
-
-        if enabled {
-            if let event = makeEvent(id: id) {
-                EventManager.shared.activate(event: event)
-            }
-        } else {
-            EventManager.shared.deactivate(eventId: id)
-        }
     }
 
     @objc func prefSaveAndClose(_ sender: NSButton) {

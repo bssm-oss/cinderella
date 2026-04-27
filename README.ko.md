@@ -1,5 +1,10 @@
 # Cinderella
 
+## 프로그램 설명
+Cinderella는 퇴근 시간을 넘겨 계속 일할 때, 정시에 퇴근하도록 유도하는 macOS 메뉴바 앱입니다.
+
+설정한 퇴근 시간 이후에는 선택한 이벤트(예: 마우스 흔들림, 경고 오버레이 등)를 통해 사용자에게 휴식/퇴근을 상기시킵니다.
+
 ## 설치 방법
 1. 릴리즈 페이지로 이동:
    - https://github.com/bssm-oss/cinderella/releases

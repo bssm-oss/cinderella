@@ -1,5 +1,10 @@
 # Cinderella
 
+## What It Is
+Cinderella is a macOS menu bar app that helps you stop working on time.
+
+After your configured work-end time, it can trigger selected reminder events (for example cursor jitter, warning overlay, and other interruptions) to nudge you to leave work.
+
 ## Install
 1. Go to the Releases page:
    - https://github.com/bssm-oss/cinderella/releases
