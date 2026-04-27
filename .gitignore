@@ -1,0 +1,24 @@
+# SwiftPM / build artifacts
+.build/
+.swiftpm/
+
+# Distribution artifacts
+dist/
+*.dmg
+*.app
+
+# macOS metadata
+.DS_Store
+
+# Logs and temporary outputs
+*.log
+*.tmp
+*.swp
+
+# Local diagnostic files created during debugging
+cinderella.log
+cinderella_stdout.log
+cinderella_status.log
+cinderella_early.log
+cinderella_early.txt
+cinderella_status.txt
